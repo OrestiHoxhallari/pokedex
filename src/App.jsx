@@ -1,7 +1,8 @@
 import PokemonCard from "./Components/PokemonCard";
-import './App.css'
-import './main.jsx'
-import './index.css'
+import './App.css';
+import './main.jsx';
+import './index.css';
+
 
 function App() {
   return (
@@ -23,4 +24,8 @@ const pokemonList = [
     name: "mew",
   },
 ];
+
+
+
+
 export default App;

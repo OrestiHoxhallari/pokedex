@@ -7,12 +7,16 @@ import Button from "./Components/NavBar";
 
 function App() {
   const[pokemonIndex, setPokemonIndex] = useState(0)
-
+  const handleclick = (index) =>{
+    setPokemonIndex(index)
+  }
   return (
     <div>
         <Button
+          pokemonlist={pokemonList}
           pokemonIndex={pokemonIndex}
           setPokemonIndex={setPokemonIndex}
+          click={handleclick}
           pokemonLength={pokemonList.length -1} />
         <PokemonCard pokemon={pokemonList[pokemonIndex]} />
     </div>
